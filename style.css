@@ -1,0 +1,277 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:rood{
+    --colorwhite: white;
+    --colorblack: black;
+    --colorgreen: green;
+}
+nav#nav {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0 100px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1;
+
+}
+.left-ul li{
+    list-style: none;
+    float: left;
+
+}
+.left-ul li a{
+    text-decoration: none;
+    color: var(--colorgreen);
+    font-size: 25px;
+}
+.right-ul li{
+    float: right;
+    display: inline-block;
+}
+.right-ul li a{
+    text-decoration: none;
+    padding:0 13px;
+    display: block;
+    color: #333333;
+    outline: none;
+
+}
+.right-ul li a:hover{
+    background: green;
+}
+header#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/Asif\ Editz\ \(11\).jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;   
+  background-color: rgba(0,0,0,0.7);
+  background-blend-mode: overlay;
+  z-index: -1;
+}
+.text-banner{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% -50%);
+
+}
+.text-banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+ .banner-text p{
+     margin: 10px 0;
+ }
+ .banner-btn{
+     margin: 20px;
+ }
+ .btn-btn-defualt{
+     display: inline-block;
+     padding: 20px 22px;
+     background: greenyellow;
+     color: white;
+     border: none;
+     border-radius: 50px;
+     text-decoration: none;
+     line-height: 0;
+     outline: none;
+ }
+ banner-btn.{
+     background: greenyellow;
+ }
+#aims{
+padding:60px 0;
+text-align: center;
+}
+.container{
+    padding:0 100px;
+}
+.aimheading{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgb(58, 58, 55) ;
+    color: rgb(31, 32, 28);
+    display: inline-block;
+    margin: 20px ;
+    padding: 20px;
+
+} 
+.aimbtn{
+    margin-top: 20px;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    clear:both;
+    content: ""; 
+    display: table; 
+}
+.col-6{
+    float: left;
+    width: 50%;
+}
+.introimg {
+    width: 100%;
+    height: 553px;
+    overflow: hidden;
+}
+.introimg img{
+    width: 100%;
+    height: 100%;
+}
+  .intro{
+      display: block;
+      width: 100%;
+      height: 553px;
+      overflow: hidden;
+      background-color: yellowgreen;
+      color: white;
+      padding: 50px 100px 50px 50px;
+  }
+  .ownername{
+      font-size: 25px;
+     margin-bottom: 15px;
+     display: inline-block;
+     border-bottom: 1px solid #ffffff;
+     color: white;
+  }
+
+.intro strong{
+    display: block;
+    font-weight:800;
+    margin-bottom: 20px;
+
+}
+.ownerintro{
+    letter-spacing: 1.4px;
+    font-size: 15px;  
+}
+ .col-3{
+     float: left;
+     width: 25%;
+     text-align: center;
+
+ } 
+ .container{
+     margin-top:20px;
+ }
+ #services{
+     padding: 5px;
+     text-align: center;
+ }
+ .service-icon i{
+     width: 50px;
+     height: 50px;
+     line-height: 40px;
+     display: block;
+     border: 1px solid rgb(34, 211, 34);
+     border-radius: 50%;
+     font-size: 20px;
+     text-align: center;
+     color: greenyellow;
+     margin: 0 auto ;
+ }
+.service-header{
+    margin:25px 0;
+    font-size:20px;
+    font-weight: 300;
+    letter-spacing:1.3px;
+    color: rgb(126, 71, 71);
+    text-shadow: 2px 2px 6px rgb(202, 110, 23);
+}
+
+.servicesheader{
+    margin-bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+}
+.servicesheader h2{
+    display: inline-block;
+    color: darkslategray;
+    border-bottom: 1px solid gray;
+}
+#contact {
+    margin: 100px 0;
+
+}
+ .contact-header h3{
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 1.3px;
+display: inline-block;
+border-bottom: 1px solid gray;
+padding-bottom: 10px;
+ }
+ .contact-header p{
+     margin-top: 16px;  
+
+
+ }
+ form{
+     text-align: right;  
+
+ }
+.group{
+    margin-bottom: 15px;
+}
+.control{
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
+    border:1px solid  gray;
+    width: 100%;
+}
+.toggle{
+    
+        position: fixed;
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+        line-height:40px;
+        text-align:center;
+        border-radius: 50%;
+        background: green;
+        color:rgb(158, 126, 126);
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: none;
+
+  
+}
+@media (max-width: 765px){
+   nav#nav{
+       padding: 0 0;
+   }
+    .right-ul li {
+        float: none;
+        display: block;
+    }
+    .left-ul li a{
+        padding-left: 10x;
+    }
+.left-ul li{
+    float: none;
+    display: block;
+}
+.right-ul li a{
+    background: white;
+}
+.toggle{
+    display: block;
+}
+}
+
